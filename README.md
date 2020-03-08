@@ -1,7 +1,7 @@
 # tex-table
 Here you can find a python script for creating LaTex-styled cells in a pandas dataframe. It also helps you to write values with errors (upper and lower) with LaTex style features. 
 
-The core code is in 'pandas_to_tex.py', while an example of usage is in 'pandas_to_tex_demo.py'. The program demands a dataset, which is provided for out example (sample_data.txt). A files of different types are in '.tex' format.
+The core code is in `pandas_to_tex.py`, while an example of usage is in `pandas_to_tex_demo.py`. The program demands a dataset, which is provided for out example (sample_data.txt). A files of different types are in `.tex` format.
 
 Assuming you have table in CSV or text format with columns named like: "par", "par_lo", "par_hi" and others, e.g., "statistics", "exposure", "obsIds" etc. 
 
