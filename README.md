@@ -1,6 +1,8 @@
 # tex-table
-Here you can find python script for LaTex code of tables creation through pandas python library. It also helps you to write values with errors (upper and lower) with latex style features. You can find python code, example data (fit_results) and log file with code for building tables in latex. For log file in linux you should write:
+Here you can find a python script for creating LaTex-styled cells in a pandas dataframe. It also helps you to write values with errors (upper and lower) with LaTex style features. 
 
-python3 pandas_tex.py > "log.txt"
+The core code is in 'pandas_to_tex.py', while an example of usage is in 'pandas_to_tex_demo.py'. The program demands a dataset, which is provided for out example (sample_data.txt). A files of different types are in '.tex' format.
 
-Log file contains LaTex code. Assuming you have table in CSV or text format with columns named like: "par", "par_min", "par_max" and others, e.g., "statistics", "exposure", "obsIds" etc. Some of columns you can keep unchanged without any formating (e.g. last few ones in previous sentence), but for estimated parameters it will look like: " $par^{+err1}_{-err2}$ ", where err1 = par_max - par, err2 = par - par_min
+Assuming you have table in CSV or text format with columns named like: "par", "par_lo", "par_hi" and others, e.g., "statistics", "exposure", "obsIds" etc. 
+
+Some of the columns you can keep unchanged with or without any formating (e.g. the latter column names), but for estimated parameters it will look like: " $par^{+err1}_{-err2}$ ", where err1 = par_hi - par, err2 = par - par_lo
